@@ -27,3 +27,8 @@ read_more:
   en: Read More
   ja: もっと見る
   de: Mehr Lesen
+
+posted_at_format:
+  en: 'Posted at %-I:%M %p on %B, %-d %Y'
+  de: 'Gepostet am  %-I:%M %p on %B, %-d %Y'
+  ja: '%Y年%-m月%-d日 %H:%M'

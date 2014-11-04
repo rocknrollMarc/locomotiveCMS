@@ -27,21 +27,21 @@ order_by: manually
 
 # A list describing each field
 fields:
-    - caption: # The lowercase, underscored name of the field
-        label: Caption # Human readable name of the field
-        type: string
-        required: true
-        localized: false
+- caption: # The lowercase, underscored name of the field
+    label: Caption # Human readable name of the field
+    type: string
+    required: true
+    localized: true
 
-    - file: # The lowercase, underscored name of the field
-        label: File # Human readable name of the field
-        type: file
-        required: true
-        localized: false
+- file: # The lowercase, underscored name of the field
+    label: File # Human readable name of the field
+    type: file
+    required: true
+    localized: false
 
-    - post: # Name of the field
-        label: Post # Human readable name of the field
-        type: belongs_to
-        required: false # wagon doesn't handle pushing of required relationships
-        localized: false
-        class_name: posts
+- post: # Name of the field
+    label: Post # Human readable name of the field
+    type: belongs_to
+    required: true
+    localized: false
+    class_name: posts

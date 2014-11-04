@@ -26,9 +26,10 @@ content_type: posts
 {% block main %}
 
 <article class="post">
-  <h3 class="posted-at">
-    Posted at {{ post.posted_at | localized_date: '%-I:%M %p' }} on {{ post.posted_at | localized_date: '%B, %-d %Y' }}
-  </h3>
+<h3 class="posted-at">
+  {% assign posted_at_format = 'posted_at_format' | translate %}
+  {{ post.posted_at | localized_date: posted_at_format }}
+</h3>
 
   {% if post.tags %}
     <p class="tags">
