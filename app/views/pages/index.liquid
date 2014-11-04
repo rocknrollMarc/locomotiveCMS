@@ -11,6 +11,8 @@ published: true
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     {{ 'application.css' | stylesheet_tag }}
+    {{ 'styles.css' | stylesheet_tag }}
+    {{ 'fonts.css' | stylesheet_tag }}
 
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -24,7 +26,7 @@ published: true
     {% inline_editor %}
 
   </head>
-  <body>
+  <body class="page-{{ page.slug }}">
     <div class="container">
   <!-- Site Title -->
   <div class="row">
@@ -73,6 +75,7 @@ published: true
 <!-- Javascripts -->
 <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 {{ 'bootstrap.min.js' | javascript_tag }}
+{{ 'main.js' | javascript_tag }}
 
   </body>
 </html>
