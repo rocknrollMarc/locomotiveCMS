@@ -24,7 +24,8 @@ position: 1
 
 {% block main %}
   <div class="row posts">
-    {% for post in contents.posts %}
+    {% paginate contents.posts by 12 %}
+      {% for post in contents.posts %}
       <div class="post-listing col-sm-6 col-md-4">
         <div class="thumbnail">
           {% if post.featured_image.url %}
@@ -44,5 +45,7 @@ position: 1
       {% cycle  '', '<div class="clearfix visible-sm">&nbsp;</div>' %}
       {% cycle '', '', '<div class="clearfix hidden-sm hidden-xs">&nbsp;</div>'  %}
     {% endfor %}
+    {% include 'pagination' with paginate %}
+    {% endpaginate %}
   </div>
 {% endblock %}
