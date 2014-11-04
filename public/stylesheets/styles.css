@@ -74,6 +74,10 @@ div.img-box p {
   text-align: center;
 }
 
+div.photos div.img-box {
+  margin-bottom: 20px;
+}
+
 /* phones */
 @media (max-width: 767px) {
   body.page-about .img-box {
