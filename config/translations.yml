@@ -6,3 +6,24 @@
 # hello_world:
 #   en: Hello world !
 #   fr: Bonjour le monde !
+en:
+  ja: Japanese
+  de: German
+
+ja:
+  en: 日本語
+  de: ドイツ語
+
+de:
+  en: Englisch
+  ja: Japanisch
+  
+home_page:
+  en: Home
+  ja: ホーム
+  de: Zuhause ;)
+
+read_more:
+  en: Read More
+  ja: もっと見る
+  de: Mehr Lesen
